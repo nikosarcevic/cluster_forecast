@@ -1,0 +1,15 @@
+richness_bins:
+  edges:
+  - 20.0
+  - 30.0
+  - 45.0
+  - 70.0
+  - 120.0
+  - 220.0
+  count: 5
+redshift_bins:
+  y1_nbins: 11
+  y10_nbins: 5
+source:
+  counts_yaml: desc_srd_counts.yaml
+  harvested_from_config: false

@@ -1,0 +1,210 @@
+dataset: DESC_SRD
+probe: clusterN_clusterWL
+counts:
+  Y1:
+    shape:
+    - 3
+    - 5
+    order:
+    - z_bin
+    - richness_bin
+    values:
+    - - 6567.915
+      - 3011.662
+      - 1298.958
+      - 459.9047
+      - 90.54683
+    - - 9438.942
+      - 3931.948
+      - 1509.797
+      - 458.728
+      - 73.12548
+    - - 8775.993
+      - 3279.941
+      - 1106.261
+      - 284.1466
+      - 36.02026
+    flat_index_map:
+      '0':
+        z_bin: 0
+        richness_bin: 0
+        value: 6567.915
+      '1':
+        z_bin: 0
+        richness_bin: 1
+        value: 3011.662
+      '2':
+        z_bin: 0
+        richness_bin: 2
+        value: 1298.958
+      '3':
+        z_bin: 0
+        richness_bin: 3
+        value: 459.9047
+      '4':
+        z_bin: 0
+        richness_bin: 4
+        value: 90.54683
+      '5':
+        z_bin: 1
+        richness_bin: 0
+        value: 9438.942
+      '6':
+        z_bin: 1
+        richness_bin: 1
+        value: 3931.948
+      '7':
+        z_bin: 1
+        richness_bin: 2
+        value: 1509.797
+      '8':
+        z_bin: 1
+        richness_bin: 3
+        value: 458.728
+      '9':
+        z_bin: 1
+        richness_bin: 4
+        value: 73.12548
+      '10':
+        z_bin: 2
+        richness_bin: 0
+        value: 8775.993
+      '11':
+        z_bin: 2
+        richness_bin: 1
+        value: 3279.941
+      '12':
+        z_bin: 2
+        richness_bin: 2
+        value: 1106.261
+      '13':
+        z_bin: 2
+        richness_bin: 3
+        value: 284.1466
+      '14':
+        z_bin: 2
+        richness_bin: 4
+        value: 36.02026
+    source_file: datavectors/clusterN_clusterWL_Y1_fid
+  Y10:
+    shape:
+    - 4
+    - 5
+    order:
+    - z_bin
+    - richness_bin
+    values:
+    - - 6567.915
+      - 3011.662
+      - 1298.958
+      - 459.9047
+      - 90.54683
+    - - 9438.942
+      - 3931.948
+      - 1509.797
+      - 458.728
+      - 73.12548
+    - - 8775.993
+      - 3279.941
+      - 1106.261
+      - 284.1466
+      - 36.02026
+    - - 6344.051
+      - 2107.83
+      - 618.7439
+      - 133.1268
+      - 13.28767
+    flat_index_map:
+      '0':
+        z_bin: 0
+        richness_bin: 0
+        value: 6567.915
+      '1':
+        z_bin: 0
+        richness_bin: 1
+        value: 3011.662
+      '2':
+        z_bin: 0
+        richness_bin: 2
+        value: 1298.958
+      '3':
+        z_bin: 0
+        richness_bin: 3
+        value: 459.9047
+      '4':
+        z_bin: 0
+        richness_bin: 4
+        value: 90.54683
+      '5':
+        z_bin: 1
+        richness_bin: 0
+        value: 9438.942
+      '6':
+        z_bin: 1
+        richness_bin: 1
+        value: 3931.948
+      '7':
+        z_bin: 1
+        richness_bin: 2
+        value: 1509.797
+      '8':
+        z_bin: 1
+        richness_bin: 3
+        value: 458.728
+      '9':
+        z_bin: 1
+        richness_bin: 4
+        value: 73.12548
+      '10':
+        z_bin: 2
+        richness_bin: 0
+        value: 8775.993
+      '11':
+        z_bin: 2
+        richness_bin: 1
+        value: 3279.941
+      '12':
+        z_bin: 2
+        richness_bin: 2
+        value: 1106.261
+      '13':
+        z_bin: 2
+        richness_bin: 3
+        value: 284.1466
+      '14':
+        z_bin: 2
+        richness_bin: 4
+        value: 36.02026
+      '15':
+        z_bin: 3
+        richness_bin: 0
+        value: 6344.051
+      '16':
+        z_bin: 3
+        richness_bin: 1
+        value: 2107.83
+      '17':
+        z_bin: 3
+        richness_bin: 2
+        value: 618.7439
+      '18':
+        z_bin: 3
+        richness_bin: 3
+        value: 133.1268
+      '19':
+        z_bin: 3
+        richness_bin: 4
+        value: 13.28767
+    source_file: datavectors/clusterN_clusterWL_Y10_fid
+notes:
+- "ONLY the first nz\xD7rbins entries are used (pure cluster counts)."
+- WL, photo-z, etc. that follow in the SRD datavectors are intentionally ignored.
+richness_bins:
+  edges:
+  - 20.0
+  - 30.0
+  - 45.0
+  - 70.0
+  - 120.0
+  - 220.0
+  count: 5

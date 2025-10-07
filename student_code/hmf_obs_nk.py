@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from astropy.cosmology import FlatLambdaCDM
 
-from src.hmf_theory_nk import compute_hmf_analytical
+from student_code.hmf_theory_nk import compute_hmf_analytical
 
 
 class LSSTClusterAnalysis:

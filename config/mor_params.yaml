@@ -1,0 +1,57 @@
+forward:
+  # Tuned to match Y1 counts when using the Jenkins (2000/2001 FoF) HMF.
+  # Median(data/forward) ≈ 1.00 across z-rows with your pipeline.
+  default:
+    params:
+      a: 3.1145  # ln λ normalization at M_pivot, z=0
+      b: 1.06383  # slope vs ln M
+      c: -0.055  # ln(1+z) evolution
+      sigma_0: 0.25  # scatter in ln λ|M at pivot
+      q_m: 0.0  # optional mass-dependence of scatter
+      q_z: 0.0  # optional z-dependence of scatter
+      m_pivot: 3.0e14  # Msun/h
+    integrator:
+      n_z: 11  # number of redshift points for integration
+      n_m: 500  # number of mass points for integration
+      m_min: 1.0e13  # Msun/h
+      m_max: 3.0e15  # Msun/h
+  # If you switch to Tinker10, the best-fit normalization shifts upward.
+  # This profile is a good starting point for Tinker10 runs.
+  tinker10_best_fit:
+    params:
+      a: 3.1483
+      b: 1.06383
+      c: -0.055
+      sigma_0: 0.25
+      q_m: 0.0
+      q_z: 0.0
+      m_pivot: 3.0e14
+    integrator:
+      n_z: 11
+      n_m: 500
+      m_min: 1.0e13
+      m_max: 3.0e15
+
+  jenkins_best_fit:
+    params:
+      a: 3.1169
+      b: 1.06383
+      c: -0.055
+      sigma_0: 0.25
+      q_m: 0.0
+      q_z: 0.0
+      m_pivot: 3.0e14
+    integrator:
+      n_z: 11
+      n_m: 500
+      m_min: 1.0e13
+      m_max: 3.0e15
+
+inverse:
+  default:
+    params:
+      m_pivot: 3.0e14  # Msun/h
+      lambda_pivot: 25.0
+      z_pivot: 0.6
+      a: 0.94  # exponent in (λ/λ_pivot)^A
+      b: -0.20  # evolution exponent in ((1+z)/(1+z_pivot))^B
