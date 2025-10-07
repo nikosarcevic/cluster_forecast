@@ -84,7 +84,7 @@ def plot_binned_hmf(
 
     fig.tight_layout()
 
-    # build filename safely
+    # build filename safely here
     suffix = f"_{fwd_profile}" if fwd_profile else ""
     out = plt_dir / f"binned_hmf_{year}_{hmf_name}{suffix}.{file_ext}"
 
